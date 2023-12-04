@@ -1,0 +1,186 @@
+/* detailpage */
+.main-container {
+    align-items: center;
+    height: 800px;
+    margin: 30px 5%;
+    padding: 0;
+  }
+  .main-container-left {
+    width: 50%;
+    height: 800px;
+    float: left;
+  }
+  .main-container-right {
+    width: 50%;
+    height: 800px;
+    float: right;
+  }
+    
+  .detailmainpicture {
+    margin-right: 50px;
+    width: 500px;
+    height: 600px;
+    }
+        
+  .detailmainpicture img {
+    width: 500px;
+    height: auto;
+    }
+    
+  
+  .detailinformation{
+    font-size: x-large;
+    font-weight: bold;
+  }
+  
+  .detailchoosepicture {
+    margin-top: 10px;
+    margin-left: -15px;
+  }
+  .detailchoosepicture img{
+    width: 90px;
+    height: auto;
+    justify-content: space-between; 
+    margin: 20px;
+  }
+  
+  .addto{
+    font-size: medium;
+    float: right;
+    margin-right: 200px;
+  }
+  .Header_icons{
+    height: 18px;
+  }
+  
+  button {
+    background-color: #D06809; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    margin-left: 20px;
+  }
+
+  select {
+    background-color: #DCC3AB;
+    border-radius: 10px;
+    padding: 5px;
+    width: 60px;
+  }
+  .price{
+    font-size: medium;
+  }
+  
+  .size{
+    font-size: medium;
+    font-weight: bold;
+  }
+  
+  .color{
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .colors-container {
+    height: 60px;
+    margin-left: -10px;
+  }  
+  
+  .colors-container img{
+    width: 40px;
+    margin: 10px;
+  }
+  
+  .quality{
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .qualitynumber{
+    font-size: medium;
+  }
+  
+  .description{
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .descriptioncontent{
+    font-size: smaller;
+  }
+  
+  .delivery{
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .deliverycontent{
+    font-size: smaller;
+    margin-top: 20px;
+  }
+  
+  .similar{
+    font-family: NanumMyeongjo;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px; 
+    margin: 0;
+  }
+  
+  .recommendations{
+    display: flex; 
+    flex-wrap: wrap; 
+    text-align: center;
+    width: 95%;
+    height: auto;
+    margin: 20px 50px;
+  }
+
+  .descriptionabout-container{
+    position: relative;
+    width: 20%;
+    margin: 20px;
+  }
+  .descriptionabout-container-img {
+    width: 100%;
+    height: auto;
+  }
+  .overlay{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 10%;
+  }
+  .theprice {
+    text-align: left;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:#DCC3AB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+  
+ .circles-container{
+    display: flex;
+ }
+
+  .circle-text {
+    text-align: center;
+    font-size: 15px;
+    font-weight: regular;
+    color: black;
+  }
+

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bibiee</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="detailpage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Overpass:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="detailedpage.js"></script>
+    <body>
+    <header>
+      <nav>
+        <div id="language-selector">
+          <p class="language-selector-font">En</p>
+          <p>/</p>
+          <p>Hu</p>
+        </div>
+          <ul>
+            <li><a href="productpage.html" class="header menu">Products</a></li>
+            <li><a href="#" class="header menu">Events</a></li>
+            <li><a href="index.html"><img
+                class="Header_logo"
+                src="icons/Bibiee logo.svg"
+                alt="Bibiee logo"
+              />
+            </a></li>
+            <li><a href="#" class="header menu">About us</a></li>
+            <li><a href="#" class="header menu">Contact</a></li>
+          </ul>
+          <div class="Header-icons-container">
+          <a href="#"><img
+              class="Header_icons"
+              src="icons/account icon.svg"
+              alt="Account icon"
+            /></a>
+          <a href="#"><img
+              class="Header_icons"
+              src="icons/heart icon.svg"
+              alt="Heart icon"
+            /></a>
+          <a href="shoppingcart.html"><img
+              class="Header_icons"
+              src="icons/cart icon.svg"
+              alt="Cart icon"
+            /></a>
+          </div>
+      </nav>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="main-container-left">
+          <div id="detailmainpicture" class="detailmainpicture">
+            <img src="pictures/basic beanie bright red big pic.png" alt="beanie picture" />
+          </div>
+          <!-- picture change -->
+          <div class="detailchoosepicture">
+            <img src="pictures/basic beanie bright red small pic.png" alt="beanie front picture" onclick="changeImage('basic beanie bright red big pic')"/>
+            <img src="pictures/basic red front small.png" alt="beanie front picture" onclick="changeImage('basic red front big')"/>
+            <img src="pictures/basic red product small.png" alt="beanie product picture" onclick="changeImage('basic red product big')"/>
+            <img src="pictures/basic red material small.png" alt="beanie material picture" onclick="changeImage('basic red material big')"/>
+          </div>
+          <!-- picture change -->
+        </div>
+        <div class="main-container-right">
+          <p>
+            <a class="detailinformation">
+                Basic beanie </a>
+            <a class="addto">
+                Add to wish list <img
+                    class="Header_icons"
+                    src="icons/heart icon.svg"
+                    alt="Heart icon"/>
+              </a>
+          </p>
+          <p class="price">
+              350 SEK
+          </p>
+          <!-- size part -->
+          <p class="size">
+              <br>Size<br></p>
+              <div class="circles-container">
+              <div class="circle">
+                <div class="circle-text">
+                  S
+                </div>
+              </div>
+            
+              <div class="circle">
+                <div class="circle-text">
+                  M
+                </div>
+              </div>
+            
+              <div class="circle">
+                <div class="circle-text">
+                  L
+                </div>
+              </div>
+            
+              <div class="circle">
+                <div class="circle-text">
+                  XL
+                </div>
+              </div>
+            </div>
+            <!-- size part -->
+            <!-- color part -->
+          <p class="color">
+              Color
+          </p>
+          <div class="colors-container">
+              <img src="pictures/red cotton.png" alt="red cotton">
+              <img src="pictures/yellow cotton.png" alt="yellow cotton">
+              <img src="pictures/blue cotton.png" alt="blue cotton">
+          </div>
+          <!-- color part -->
+          <!-- quality part -->
+          <p class="quality">
+              Quality
+          </p>
+          <!-- quality part -->
+          <!-- select holder -->
+          <select name="qualitynumber">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <!-- select holder -->
+          <button value="button" onclick="alert('Added succsessfully!')">Add to cart</button>
+          <p class="description">
+              Description</p>
+          <div class="descriptioncontent">
+              <br>This handmade designed casual beanie is perfect for warmer day.</br>
+              <br>Comes in different colors.</br>
+              <br>100% cotton</br>
+              <br>We recommend you to wash it by hand</br>
+          </div>
+          <p class="delivery">
+              Delivery
+          </p>
+          <div class="deliverycontent">
+              <li>Standard shipping: 40SEK/Free over 1000SEK</li>
+              <li>Delivery timeframe shown at checkout</li>
+              <li>Shipping to: Europe</li>
+              <li>Pay with Credit Card</li> 
+          </div>
+        </div>
+      </div>
+      <div class="similar">
+            SIMILAR PRODUCTS
+      </div>
+      <!-- recommmend part -->
+      <div class="recommendations">
+        <div class="descriptionabout-container">
+          <img class="descriptionabout-container-img" src="pictures/pompom beanie mustard.png" alt="mustard beanie">
+          <img class="overlay" src="icons/heart icon.svg" alt="Heart icon"/>
+          <div class="theprice">
+            <br>Beanie</br>
+            <br>300SEK</br>
+          </div>
+        </div>
+        <div class="descriptionabout-container">
+          <img class="descriptionabout-container-img" src="pictures/fox beanie red.png" alt="fox beanie red">
+          <img class="overlay" src="icons/heart icon.svg" alt="Heart icon"/>
+          <div class="theprice">
+            <br>Beanie</br>
+            <br>300SEK</br>
+          </div>
+        </div>
+        <div class="descriptionabout-container">
+          <img class="descriptionabout-container-img" src="pictures/basic beanie red.png" alt="basic beanie red"> 
+          <img class="overlay" src="icons/heart icon.svg" alt="Heart icon"/>
+          <div class="theprice">
+            <br>Beanie</br>
+            <br>300SEK</br>
+          </div>
+        </div>
+        <div class="descriptionabout-container">
+          <img class="descriptionabout-container-img" src="pictures/basic beanie pink.png" alt="basic beanie pink">
+          <img class="overlay" src="icons/heart icon.svg" alt="Heart icon"/>
+          <div class="theprice">
+            <br>Beanie</br>
+            <br>300SEK</br>
+          </div>
+        </div>
+      </div>
+  </main>
+  <!-- recommmend part -->
+  <footer class="footer">
+      <nav>
+        <a  class="Footer_logo" href="index.html">
+          <img
+            class="Footer_logo"
+            src="icons/bibiee logo white.svg"
+            alt="Bibiee logo"
+          />
+        </a>
+        <section class="footer-links-container">
+          <ul>
+            <a class="footer-text-underlined" href="productpage.html">
+              <li>Products</li>
+            </a>
+            <a class="footer-text-underlined" href="#">
+              <li>Events</li>
+            </a>
+          </ul>
+          <ul>
+            <a class="footer-text-underlined" href="#">
+              <li>About us</li>
+            </a>
+            <a class="footer-text-underlined" href="#">
+              <li>Contact us</li>
+            </a>
+          </ul>
+          <ul>
+            <a class="footer-text" href="#">
+              <li >bibieeknitting@gmail.com</li>
+            </a>
+            <a class="footer-text" href="#">
+              <li>+36303696450</li>
+            </a>
+          </ul>
+        </section>
+        <ul class="Footer_icons-container">
+          <a class="Footer-icons"
+           href="https://www.instagram.com/bibieeknitting/">
+            <img
+              src="icons/instagram icon.svg"
+              alt="Instagram icon"
+            />
+          </a>
+          <a class="Footer-icons"
+          href="#">
+            <img
+              src="icons/email icon.svg"
+              alt="Email icon"
+            />
+          </a>
+          <a class="Footer-icons"
+          href="https://www.facebook.com/vivie.bibiee">
+            <img
+              src="icons/facebook icon.svg"
+              alt="Facebook icon"
+            />
+          </a>
+        </ul>
+      </nav>
+      <p> @ Bibiee 2023</p>
+    </footer>
+    </body>
+  </head>
+</html>

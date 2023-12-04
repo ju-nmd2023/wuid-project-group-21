@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bibiee</title>
+    <link rel="stylesheet" href="paymentpage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Overpass:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="language-selector">
+          <p class="language-selector-font">En</p>
+          <p>/</p>
+          <p>Hu</p>
+        </div>
+        <ul>
+          <li><a href="productpage.html" class="header menu">Products</a></li>
+          <li><a href="#" class="header menu">Events</a></li>
+          <li>
+            <a href="index.html"
+              ><img
+                class="Header_logo"
+                src="icons/Bibiee logo.svg"
+                alt="Bibiee logo"
+              />
+            </a>
+          </li>
+          <li><a href="#" class="header menu">About us</a></li>
+          <li><a href="#" class="header menu">Contact</a></li>
+        </ul>
+        <div class="Header-icons-container">
+          <a href="#"
+            ><img
+              class="Header_icons"
+              src="icons/account icon.svg"
+              alt="Account icon"
+          /></a>
+          <a href="#"
+            ><img
+              class="Header_icons"
+              src="icons/heart icon.svg"
+              alt="Heart icon"
+          /></a>
+          <a href="shoppingcart.html"
+            ><img
+              class="Header_icons"
+              src="icons/cart icon.svg"
+              alt="Cart icon"
+          /></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2>Checkout</h2>
+      <form action="" method="get">
+        <!-- Contact information ------------------------------- -->
+        <div>
+          <h4>Contact information</h4>
+          <div class="email-log-in">
+            <div class="input-container">
+              <label for="email-input">Email</label>
+              <input
+                type="email"
+                placeholder="Type your email"
+                id="email-input"
+                class="input-basic"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <div class="log-in">
+              <p>Have an account?</p>
+              <a href="#">Log in</a>
+            </div>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="required-checkbox" required />
+            <label for="required-checkbox"
+              >I agree to the <a href="#"> Terms and Refund policy</a></label
+            >
+          </div>
+          <div class="first-last-names">
+            <div class="input-container">
+              <label for="first-name-input">First name</label>
+              <input
+                type="text"
+                placeholder="Type your first name"
+                id="first-name-input"
+                class="input-basic"
+                required
+                autocomplete="on"
+              />
+            </div>
+            <div class="input-container">
+              <label for="last-name-input">Last name</label>
+              <input
+                type="text"
+                id="last-name-input"
+                placeholder="Type your last name"
+                class="input-basic"
+                required
+                autocomplete="on"
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="phone-number-input">Phone number</label>
+            <input
+              type="tel"
+              placeholder="+46724658716"
+              id="phone-number-input"
+              class="input-basic"
+              required
+              autocomplete="on"
+            />
+          </div>
+        </div>
+        <!-- Delivery ------------------------------- -->
+        <div>
+          <h4>Delivery</h4>
+          <div class="input-container">
+            <label for="country-input">Country</label>
+            <select
+              id="country-input"
+              class="input-basic"
+              required
+              autocomplete="country-name"
+            >
+              <option value="Austria">Austria</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Bulgaria">Bulgaria</option>
+              <option value="Cyprus">Cyprus</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Estonia">Estonia</option>
+              <option value="Finland">Finland</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+              <option value="Greece">Greece</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Italy">Italy</option>
+              <option value="Latvia">Latvia</option>
+              <option value="Lithuania">Lithuania</option>
+              <option value="Luxembourg">Luxembourg</option>
+              <option value="Malta">Malta</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="Poland">Poland</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Romania">Romania</option>
+              <option value="Slovakia">Slovakia</option>
+              <option value="Slovenia">Slovenia</option>
+              <option value="Spain">Spain</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Ukraine">Ukraine</option>
+            </select>
+          </div>
+          <div class="postal-code-city-container">
+            <div class="input-container">
+              <label for="postal-code-input">Postal code</label>
+              <input
+                type="tel"
+                placeholder="Type postal code"
+                id="postal-code-input"
+                class="input-basic"
+                required
+                autocomplete="on"
+              />
+            </div>
+            <div class="input-container">
+              <label for="city-input">City</label>
+              <input
+                type="text"
+                placeholder="Type name of the city"
+                id="city-input"
+                class="input-basic"
+                required
+                autocomplete="on"
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="address-input">Address</label>
+            <input
+              type="text"
+              placeholder="Type your address "
+              id="address-input"
+              class="input-basic"
+              required
+              autocomplete="address-line1"
+            />
+          </div>
+          <p>+ Add apartment, suite, etc.</p>
+          <div class="input-container-hidden">
+            <label for="apartment-suite-input">Apartment, suite, etc</label>
+            <input
+              type="text"
+              placeholder="Apartment 456"
+              id="apartment-suite-input"
+              class="input-basic"
+              required
+              autocomplete="address-line2"
+            />
+          </div>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              name="Save-information"
+              id="notrequired-checkbox"
+            />
+            <label for="notrequired-checkbox"
+              >Save this information for next time</label
+            >
+          </div>
+        </div>
+        <!-- Payment ------------------------------- -->
+        <div>
+          <div>
+            <h4>Payment</h4>
+            <div>
+              <img src="icons/visa icon.svg" alt="visa-icon" />
+              <img src="icons/mastercard icon.svg" alt="mastercard-icon" />
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="card-number-input">Card number</label>
+            <input
+              type="tel"
+              placeholder="xxxx xxxx xxxx xxxx"
+              pattern="[0-9\s]{13,19}"
+              id="card-number-input"
+              class="input-basic"
+              required
+              autocomplete="cc-number"
+            />
+          </div>
+          <div class="input-container">
+            <label for="name-card-input">Card number</label>
+            <input
+              type="text"
+              placeholder="Type a name on card"
+              pattern="[0-9\s]{13,19}"
+              id="name-card-input"
+              class="input-basic"
+              required
+              autocomplete="cc-name"
+            />
+          </div>
+          <div class="first-last-names">
+            <div class="input-container">
+              <label for="card-expires-input">Expiration date</label>
+              <input
+                type="tel"
+                placeholder="MM / YY"
+                id="card-expires-input"
+                class="input-basic"
+                required
+                autocomplete="cc-exp"
+              />
+            </div>
+            <div class="input-container">
+              <label for="card-cvc-input">Security code</label>
+              <input
+                type="tel"
+                id="card-cvc-input"
+                placeholder="CVC"
+                class="input-basic"
+                required
+                autocomplete="off"
+              />
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="form-submit">Pay now</button>
+      </form>
+      <aside>
+        <div class="product-checkout">
+          <img src="pictures/basic beanie checkout.png" alt="" />
+          <div class="price-name-check">
+            <div>
+              <p class="product_name">Basic beanie</p>
+              <p>S</p>
+              <p>Red</p>
+              <p>1</p>
+            </div>
+            <p>300 SEK</p>
+          </div>
+        </div>
+        <img class="line" src="icons/Line_thin.svg" alt="line" />
+        <div class="price-shipping-total">
+          <p>Order price: <span>300 SEK</span></p>
+          <p>Shipping: <span> 40 SEK </span></p>
+          <img class="line" src="icons/Line-thick.svg" alt="line" />
+          <p class="total-price">
+            In total: <span class="total-price">340 SEK</span>
+          </p>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer">
+      <nav>
+        <a class="Footer_logo" href="index.html">
+          <img
+            class="Footer_logo"
+            src="icons/bibiee logo white.svg"
+            alt="Bibiee logo"
+          />
+        </a>
+        <section class="footer-links-container">
+          <ul>
+            <a class="footer-text-underlined" href="productpage.html">
+              <li>Products</li>
+            </a>
+            <a class="footer-text-underlined" href="#">
+              <li>Events</li>
+            </a>
+          </ul>
+          <ul>
+            <a class="footer-text-underlined" href="#">
+              <li>About us</li>
+            </a>
+            <a class="footer-text-underlined" href="#">
+              <li>Contact us</li>
+            </a>
+          </ul>
+          <ul>
+            <a class="footer-text" href="#">
+              <li>bibieeknitting@gmail.com</li>
+            </a>
+            <a class="footer-text" href="#">
+              <li>+36303696450</li>
+            </a>
+          </ul>
+        </section>
+        <ul class="Footer_icons-container">
+          <a
+            class="Footer-icons"
+            href="https://www.instagram.com/bibieeknitting/"
+          >
+            <img src="icons/instagram icon.svg" alt="Instagram icon" />
+          </a>
+          <a class="Footer-icons" href="#">
+            <img src="icons/email icon.svg" alt="Email icon" />
+          </a>
+          <a class="Footer-icons" href="https://www.facebook.com/vivie.bibiee">
+            <img src="icons/facebook icon.svg" alt="Facebook icon" />
+          </a>
+        </ul>
+      </nav>
+      <p>@ Bibiee 2023</p>
+    </footer>
+  </body>
+</html>

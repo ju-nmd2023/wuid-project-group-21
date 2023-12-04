@@ -1,0 +1,366 @@
+/*colors*/
+* {
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Pecita;
+  src: url(fonts/Pecita.otf);
+}
+
+html {
+  --dark: #231f20;
+  --pink: #b76567;
+  --brown: #2e140c;
+  --white: #ffffff;
+  --orange: #d06809;
+  --beige: #dcc3ab;
+  --orange-hover: #f37400;
+  --pink-hover: #e07b7d;
+}
+
+/*Header*/
+header {
+  background: transparent;
+}
+
+.sticky /* this is for fixed header, we will do it in js later*/ {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--white);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding: 10px 0;
+}
+
+#language-selector {
+  display: flex;
+  gap: 0px;
+  flex-direction: row;
+  padding-right: 103px;
+  text-transform: uppercase;
+}
+
+.language-selector-font {
+  font-weight: 700;
+}
+
+header nav div p {
+  padding: 4px 4px 4px 4px;
+  margin: 0;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-width: 50%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.Header-icons-container {
+  display: flex;
+  gap: 20px;
+}
+
+header nav div a {
+  padding: 10px 10px 6px 10px;
+}
+
+.Header_logo {
+  height: 50px;
+}
+
+/*main*/
+
+body {
+  background-image: url(icons/Backgroud\ icon.svg);
+  margin: 0;
+}
+
+h1 {
+  color: var(--white);
+  font-family: "Pecita";
+  font-weight: 100;
+  font-size: 150px;
+  height: 150px;
+}
+
+h2 {
+  color: var(--dark);
+  font-family: "Nanum Myeongjo";
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.heading-products-container {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.made-with-love-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
+.body-text1 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.button-discover-more {
+  display: flex;
+  padding: 20px 60px 18px 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--white);
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.button-text {
+  color: var(--Dark, #231f20);
+  text-align: center;
+  font-family: Overpass;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+.button-discover-more :hover {
+  color: var(--orange-hover);
+}
+
+.section-first-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background: url(pictures/home\ page\ product\ image.png);
+  background-position: center;
+  min-height: 700px;
+  height: 50vw;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+  min-width: 400px;
+  padding-top: 18vw;
+  padding-bottom: 18vw;
+  padding-left: 32vw;
+  padding-right: 32vw;
+}
+
+.advantages-container {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.advantage-card {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.advantage-icon {
+  max-height: 80px;
+}
+
+.advantage-text {
+  color: var(--white);
+  text-align: center;
+  font-family: Overpass;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.product-card {
+  position: relative;
+  text-decoration: none;
+}
+
+.product_name,
+.price {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.product_name {
+  font-weight: 600;
+}
+
+.product-img {
+  width: 100%;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4vw 8vw;
+  padding-right: 10vw;
+  padding-left: 10vw;
+  padding-bottom: 90px;
+  margin-top: 150px;
+  margin-bottom: 180px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.heart {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+svg {
+  max-width: 60%;
+  padding: 6px;
+}
+
+/*Footer*/
+
+footer {
+  background-color: var(--brown);
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.footer-links-container {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+footer nav section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.footer-text-underlined {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: underline;
+  color: var(--white);
+  list-style-type: none;
+}
+
+.footer-text-underlined :hover {
+  color: var(--pink-hover);
+  text-decoration-line: underline;
+  text-decoration-color: var(--pink-hover);
+}
+
+.footer-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: none;
+  color: var(--white);
+  list-style-type: none;
+}
+
+.footer-text :hover {
+  color: var(--pink-hover);
+}
+
+.Footer_icons-container {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.Footer-icons {
+  padding: 8px 8px 6px 8px;
+}
+
+.Footer_logo {
+  max-width: 350px;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 100;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .Footer_logo {
+    max-width: 250px;
+  }
+  .footer-text {
+    font-size: 14px;
+  }
+  .footer-text-underlined {
+    font-size: 14px;
+  }
+}
