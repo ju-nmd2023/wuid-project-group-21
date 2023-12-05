@@ -165,13 +165,27 @@ label {
   font-size: 0.9rem;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
 .product_name {
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
 .total-price {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.price-shipping-total div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 8px;
 }
 
 main {
@@ -225,6 +239,10 @@ main form div {
   flex-grow: 1;
 }
 
+.input-container-hidden {
+  display: none;
+}
+
 .input-basic {
   display: flex;
   padding: 10px;
@@ -234,12 +252,24 @@ main form div {
   border-radius: 10px;
   border: 2px solid var(--beige);
   background: var(--white);
-  color: rgba(35, 31, 32, 0.3);
+  color: var(--dark);
   font-family: Overpass;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+::placeholder {
+  color: #bdbcbc;
+}
+
+input:focus {
+  border: 2px solid var(--orange);
+}
+
+#country-input:invalid {
+  color: #bdbcbc;
 }
 
 .email-log-in {
@@ -269,7 +299,18 @@ main form div {
   height: 20px;
 }
 
-button {
+.add-info-button {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.Remove-info-button {
+  display: none;
+}
+
+.form-submit {
   display: flex;
   padding: 20px 60px 18px 60px;
   justify-content: center;
@@ -325,7 +366,6 @@ aside {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  font-size: 1rem;
 }
 
 .line {
@@ -336,7 +376,7 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 15px;
+  gap: 20px;
   align-self: stretch;
 }
 

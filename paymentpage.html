@@ -78,12 +78,13 @@
           <div class="email-log-in">
             <div class="input-container">
               <label for="email-input">Email</label>
+              <!-- The pattren attribute of  this input was adapted from https://stackoverflow.com/questions/5601647/html5-email-input-pattern-attribute -->
               <input
                 type="email"
                 placeholder="Type your email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
                 id="email-input"
                 class="input-basic"
-                required
                 autocomplete="email"
               />
             </div>
@@ -104,9 +105,9 @@
               <input
                 type="text"
                 placeholder="Type your first name"
+                pattern="[A-Za-z]{2,30}"
                 id="first-name-input"
                 class="input-basic"
-                required
                 autocomplete="on"
               />
             </div>
@@ -116,8 +117,8 @@
                 type="text"
                 id="last-name-input"
                 placeholder="Type your last name"
+                pattern="[A-Za-z]{2,30}"
                 class="input-basic"
-                required
                 autocomplete="on"
               />
             </div>
@@ -127,9 +128,9 @@
             <input
               type="tel"
               placeholder="+46724658716"
+              pattern="\+[1-9]{1}[0-9]{3,14}[0-9]{7,14}"
               id="phone-number-input"
               class="input-basic"
-              required
               autocomplete="on"
             />
           </div>
@@ -142,9 +143,10 @@
             <select
               id="country-input"
               class="input-basic"
-              required
               autocomplete="country-name"
             >
+              <!-- The following 1 line under this comment of code was adapted from https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box-->
+              <option value="" disabled selected>Select your country</option>
               <option value="Austria">Austria</option>
               <option value="Belgium">Belgium</option>
               <option value="Bulgaria">Bulgaria</option>
@@ -181,8 +183,8 @@
                 type="tel"
                 placeholder="Type postal code"
                 id="postal-code-input"
+                pattern="[0-9]*"
                 class="input-basic"
-                required
                 autocomplete="on"
               />
             </div>
@@ -193,7 +195,6 @@
                 placeholder="Type name of the city"
                 id="city-input"
                 class="input-basic"
-                required
                 autocomplete="on"
               />
             </div>
@@ -205,19 +206,21 @@
               placeholder="Type your address "
               id="address-input"
               class="input-basic"
-              required
               autocomplete="address-line1"
             />
           </div>
-          <p>+ Add apartment, suite, etc.</p>
-          <div class="input-container-hidden">
+          <button class="add-info-button">+ Add apartment, suite, etc.</button>
+          <button class="Remove-info-button">
+            - Remove apartment, suite, etc.
+          </button>
+          <div id="Additional-part" class="input-container-hidden">
             <label for="apartment-suite-input">Apartment, suite, etc</label>
             <input
+              name="apartment-suite-input"
               type="text"
               placeholder="Apartment 456"
               id="apartment-suite-input"
               class="input-basic"
-              required
               autocomplete="address-line2"
             />
           </div>
@@ -249,19 +252,17 @@
               pattern="[0-9\s]{13,19}"
               id="card-number-input"
               class="input-basic"
-              required
               autocomplete="cc-number"
             />
           </div>
           <div class="input-container">
-            <label for="name-card-input">Card number</label>
+            <label for="name-card-input">Card name</label>
             <input
               type="text"
               placeholder="Type a name on card"
-              pattern="[0-9\s]{13,19}"
               id="name-card-input"
+              pattern="[A-Za-z]{4,30}"
               class="input-basic"
-              required
               autocomplete="cc-name"
             />
           </div>
@@ -272,8 +273,8 @@
                 type="tel"
                 placeholder="MM / YY"
                 id="card-expires-input"
+                pattern="(0[1-9]|1[0-2])/[0-9]{2}"
                 class="input-basic"
-                required
                 autocomplete="cc-exp"
               />
             </div>
@@ -283,8 +284,8 @@
                 type="tel"
                 id="card-cvc-input"
                 placeholder="CVC"
+                pattern="([0-9]{3})"
                 class="input-basic"
-                required
                 autocomplete="off"
               />
             </div>
@@ -292,9 +293,13 @@
         </div>
         <button type="submit" class="form-submit">Pay now</button>
       </form>
+      <!-- Aside part ------------------------------- -->
       <aside>
         <div class="product-checkout">
-          <img src="pictures/basic beanie checkout.png" alt="" />
+          <img
+            src="pictures/basic beanie checkout.png"
+            alt="basic beanie picture"
+          />
           <div class="price-name-check">
             <div>
               <p class="product_name">Basic beanie</p>
@@ -307,8 +312,10 @@
         </div>
         <img class="line" src="icons/Line_thin.svg" alt="line" />
         <div class="price-shipping-total">
-          <p>Order price: <span>300 SEK</span></p>
-          <p>Shipping: <span> 40 SEK </span></p>
+          <div>
+            <p>Order price: <span>300 SEK</span></p>
+            <p>Shipping: <span> 40 SEK </span></p>
+          </div>
           <img class="line" src="icons/Line-thick.svg" alt="line" />
           <p class="total-price">
             In total: <span class="total-price">340 SEK</span>
@@ -368,5 +375,6 @@
       </nav>
       <p>@ Bibiee 2023</p>
     </footer>
+    <script type="module" src="paymentpage.js"></script>
   </body>
 </html>
