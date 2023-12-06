@@ -259,6 +259,10 @@ h2 {
   backdrop-filter: blur(10px);
 }
 
+section div a {
+  text-decoration: none;
+}
+
 .heart {
   display: block;
   position: absolute;
