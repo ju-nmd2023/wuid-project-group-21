@@ -1,273 +1,347 @@
 /*colors*/
 
 * {
-    font-family: "Overpass", sans-serif;
-    margin: 0;
-    padding: 0;
-    
-  }
-  @font-face {
-    font-family: Pecita;
-    src: url(fonts/Pecita.otf);
-  }
-  
-  html {
-    --dark: #231f20;
-    --pink: #b76567;
-    --brown: #2e140c;
-    --white: #ffffff;
-    --orange: #d06809;
-    --beige: #dcc3ab;
-    --orange-hover: #f37400;
-    --pink-hover: #e07b7d;
-  }
-  
-  /*Header*/
-  header {
-    background: transparent;
-  }
-  
-  .sticky /* this is for fixed header, we will do it in js later*/ {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: var(--white);
-  }
-  
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    padding: 10px 0;
-  }
-  
-  #language-selector {
-    display: flex;
-    gap: 0px;
-    flex-direction: row;
-    padding-right: 103px;
-    text-transform: uppercase;
-  }
-  
-  .language-selector-font {
-    font-weight: 700;
-  }
-  
-  header nav div p {
-    padding: 4px 4px 4px 4px;
-    margin: 0;
-  }
-  
-  header nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    min-width: 50%;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  header nav ul li a {
-    color: var(--dark);
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0;
-  }
-  
-  .Header-icons-container {
-    display: flex;
-    gap: 20px;
-  }
-  
-  header nav div a {
-    padding: 10px 10px 6px 10px;
-  }
-  
-  .Header_logo {
-    height: 50px;
-  }
-  body {
-    background-image: url(icons/Backgroud\ icon.svg);
-  }
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Pecita;
+  src: url(fonts/Pecita.otf);
+}
 
-  /*MAIN*/
-  
+html {
+  --dark: #231f20;
+  --pink: #b76567;
+  --brown: #2e140c;
+  --white: #ffffff;
+  --orange: #d06809;
+  --beige: #dcc3ab;
+  --orange-hover: #f37400;
+  --pink-hover: #e07b7d;
+}
+
+/*Header*/
+header {
+  background: transparent;
+}
+
+.sticky /* this is for fixed header, we will do it in js later*/ {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--white);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding: 10px 0;
+}
+
+#language-selector {
+  display: flex;
+  gap: 0px;
+  flex-direction: row;
+  padding-right: 103px;
+  text-transform: uppercase;
+}
+
+.language-selector-font {
+  font-weight: 700;
+}
+
+header nav div p {
+  padding: 4px 4px 4px 4px;
+  margin: 0;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-width: 50%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.Header-icons-container {
+  display: flex;
+  gap: 20px;
+}
+
+header nav div a {
+  padding: 10px 10px 6px 10px;
+}
+
+.Header_logo {
+  height: 50px;
+}
+
+body {
+  background-image: url(icons/Backgroud\ icon.svg);
+  margin: 0;
+}
+
+/*MAIN*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: center;
+  padding: 40px;
+  max-width: 1000px;
+  min-width: 600px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
 
 #cart-icon {
   display: block;
   margin: auto;
-  margin-bottom: 30px;
-  width: 80px;
-  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 90px;
+  margin-top: 0px;
+  animation-name: icon-animation;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
+
+@keyframes icon-animation {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.07);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  35% {
+    transform: rotate(-20deg);
+  }
+  45% {
+    transform: rotate(15deg);
+  }
+  55% {
+    transform: rotate(-15deg);
+  }
+  65% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .thanks {
   text-align: center;
   font-weight: 800;
   font-size: 22px;
-  font-family: overpass;
-  padding-bottom: 1vw;
+  padding-bottom: 16px;
 }
 .messages {
   text-align: center;
+  padding-bottom: 16px;
 }
 .order {
   text-align: center;
   font-weight: 700;
   font-size: 16px;
-  font-family: overpass;
-  padding-top: 1vw;
+  padding-bottom: 30px;
 }
 
 .line {
-    margin-bottom: 3rem;
-    border-bottom: 3px solid var(--pink);
-    width: 50%;
-    padding-top: 2vw;
-    display: block;
-    margin: auto;
+  border-bottom: 3px solid var(--pink);
+  width: 100%;
+  display: block;
 }
 
 .details {
-    text-align: center;
-    padding-top: 2vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 350px;
-    padding-right: 350px;
+  text-align: center;
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 .details2 {
   text-align: center;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 350px;
-    padding-right: 350px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.title{
-    color: var(--pink);
-    font-family: "Overpass", Bold 700;
+.title {
+  color: var(--pink);
+  font-family: "Overpass";
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+main section div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .button-continue-shopping {
-    display: flex;
-    padding: 20px 60px 18px 60px;
-    width: 150px;
-    height: 15px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 7px;
-    background: var(--pink);
-    text-decoration: none;
-    list-style-type: none;
-    flex-direction: column;
-    display: block;
-    margin: auto;
-  }
-  
-  .button-text {
-    color: var(--white);
-    text-align: center;
-    font-family: Overpass;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-  }
-  
-  .button-discover-more :hover {
-    color: var(--orange-hover);
-  }
+  position: relative;
+  display: flex;
+  padding: 20px 60px 18px 60px;
+  justify-content: center;
+  justify-self: center;
+  width: fit-content;
+  margin: auto;
+  cursor: pointer;
+  background-color: var(--pink);
+  border: none;
+  border-radius: 10px;
+  color: var(--white);
+  text-align: center;
+  font-family: Overpass;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
 
+.button-text {
+  color: var(--white);
+  text-align: center;
+  font-family: Overpass;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
 
-  /*Footer*/
+.button-discover-more :hover {
+  color: var(--orange-hover);
+}
+
+/*Footer*/
 
 footer {
-    background-color: var(--brown);
-    padding-top: 50px;
-    padding-bottom: 20px;
-    margin-top: 3vw;
+  background-color: var(--brown);
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.footer-links-container {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+footer nav section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.footer-text-underlined {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: underline;
+  color: var(--white);
+  list-style-type: none;
+}
+
+.footer-text-underlined :hover {
+  color: var(--pink-hover);
+  text-decoration-line: underline;
+  text-decoration-color: var(--pink-hover);
+}
+
+.footer-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: none;
+  color: var(--white);
+  list-style-type: none;
+}
+
+.footer-text :hover {
+  color: var(--pink-hover);
+}
+
+.Footer_icons-container {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.Footer-icons {
+  padding: 8px 8px 6px 8px;
+}
+
+.Footer_logo {
+  max-width: 350px;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 100;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .Footer_logo {
+    max-width: 250px;
   }
-  footer nav {
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-    margin-left: 10vw;
-    margin-right: 10vw;
-  }
-  .footer-links-container {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 60px;
-  }
-  footer nav section ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+  .footer-text {
+    font-size: 14px;
   }
   .footer-text-underlined {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: normal;
-    text-decoration-line: underline;
-    color: var(--white);
-    list-style-type: none;
-  }
-  
-  .footer-text-underlined :hover {
-    color: var(--pink-hover);
-    text-decoration-line: underline;
-    text-decoration-color: var(--pink-hover);
-  }
-  
-  .footer-text {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: normal;
-    text-decoration: none;
-    color: var(--white);
-    list-style-type: none;
-  }
-  
-  .footer-text :hover {
-    color: var(--pink-hover);
-  }
-  
-  .Footer_icons-container {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .Footer-icons {
-    padding: 8px 8px 6px 8px;
-  }
-  
-  .Footer_logo {
-    max-width: 350px;
-  }
-  
-  footer p {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: var(--white);
     font-size: 14px;
-    font-weight: 100;
-    padding-top: 20px;
   }
-  
-  
+}

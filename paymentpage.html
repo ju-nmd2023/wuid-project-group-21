@@ -80,9 +80,9 @@
               <label for="email-input">Email</label>
               <!-- The pattren attribute of  this input was adapted from https://stackoverflow.com/questions/5601647/html5-email-input-pattern-attribute -->
               <input
-                type="email"
+                type="text"
                 placeholder="Type your email"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+                pattern="/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}/"
                 id="email-input"
                 class="input-basic"
                 autocomplete="email"
@@ -209,11 +209,13 @@
               autocomplete="address-line1"
             />
           </div>
-          <button class="add-info-button">+ Add apartment, suite, etc.</button>
-          <button class="Remove-info-button">
+          <button type="button" class="add-info-button">
+            + Add apartment, suite, etc.
+          </button>
+          <button type="button" class="remove-info-button-hidden">
             - Remove apartment, suite, etc.
           </button>
-          <div id="Additional-part" class="input-container-hidden">
+          <div class="input-container-hidden">
             <label for="apartment-suite-input">Apartment, suite, etc</label>
             <input
               name="apartment-suite-input"
@@ -291,7 +293,7 @@
             </div>
           </div>
         </div>
-        <button type="submit" class="form-submit">Pay now</button>
+        <a href="confirmationpage.html" class="form-submit">Pay now</a>
       </form>
       <!-- Aside part ------------------------------- -->
       <aside>
