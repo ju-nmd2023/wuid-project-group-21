@@ -111,6 +111,8 @@
     margin: 0;
     box-sizing: border-box;
     text-align: center;
+    position:relative;
+    z-index: 5;
   }
 
   .Categories ul{
@@ -159,7 +161,7 @@
   .Categories ul li:hover .Category-menu ul li{
     width: 150px;
     padding: 10px;
-    border-bottom: 1px dotted var(--white);
+    border-bottom: 1px double var(--white);
     border-radius: 0;
     text-align: left;
   }
@@ -190,7 +192,7 @@
   
   .product_name,
   .price {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: justify;
     color: var(--dark);
     text-decoration: none;
@@ -231,6 +233,25 @@
     max-width: 60%;
     padding: 6px;
   }
+
+  @media screen and (max-width:520px) {
+    header, ul {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    ul{
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    li{
+        margin-left: 0;
+    }
+    
+}
+
+
 
   /*Footer*/
 
