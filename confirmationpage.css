@@ -23,11 +23,15 @@ html {
 
 /*Header*/
 header {
-  background: transparent;
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  width: 100%;
 }
 
 .sticky /* this is for fixed header, we will do it in js later*/ {
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%;
   background-color: var(--white);
@@ -92,6 +96,7 @@ header nav div a {
 
 body {
   background-image: url(icons/Backgroud\ icon.svg);
+  padding-top: 76px;
   margin: 0;
 }
 
