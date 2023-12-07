@@ -105,8 +105,8 @@ body {
   height: 800px;
   margin: 30px 5%;
   padding: 0;
-  margin-top: 30%;
-  margin-left: 40%;
+  margin-top: 4%;
+  margin-left: 15%;
 }
 .main-container-left {
   width: 50%;
@@ -265,11 +265,14 @@ select {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #dcc3ab;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 15px;
+  border-radius: 50px 50px 50px 50px;
+  border-color: #dcc3ab;
+  border-style: solid;
 }
 
 .circles-container {
@@ -280,7 +283,7 @@ select {
   text-align: center;
   font-size: 15px;
   font-weight: regular;
-  color: black;
+  color: var(--dark);
 }
 
 /*Footer*/
@@ -386,10 +389,68 @@ footer p {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    height: 800px;
+    margin: 30px 5%;
+    padding: 0;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 0.5%;
+  }
+  .main-container-left {
+    width: 50%;
+    height: 800px;
+    float: left;
+  }
+  .main-container-right {
+    width: 50%;
+    height: 800px;
+    float: right;
+  }
+    
+  .detailmainpicture {
+    margin-right: 50px;
+    width: 500px;
+    height: 600px;
+    }
+        
+  .detailmainpicture img {
+    width: 500px;
+    height: auto;
+    }
+    
+  
+  .detailinformation{
+    font-size: x-large;
+    font-weight: bold;
+  }
+  
+  .detailchoosepicture {
+    margin-top: 10px;
+    margin-left: -15px;
+  }
+  .detailchoosepicture img{
+    width: 90px;
+    height: auto;
+    justify-content: space-between; 
+    margin: 20px;
+  }
+  
+  .addto{
+    font-size: medium;
+    float: right;
+    margin-right: 200px;
+  }
+  .Header_icons{
+    height: 18px;
+  }
+  
+  button {
+    background-color: #D06809; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    margin-left: 20px;
   }
 
   .Footer_logo {
