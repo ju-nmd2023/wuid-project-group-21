@@ -93,6 +93,7 @@ header nav div a {
   height: 50px;
 }
 
+/* body */
 body {
   background-image: url(icons/Backgroud\ icon.svg);
   padding-top: 76px;
@@ -263,6 +264,8 @@ aside {
   color: var(--orange-hover);
   cursor: pointer;
 }
+
+/*product card*/
 .product-card {
   position: relative;
   text-decoration: none;
@@ -276,6 +279,7 @@ aside {
 
 .product_name {
   font-weight: 600;
+  color: var(--dark);
 }
 .product-img {
   width: 100%;
@@ -316,36 +320,43 @@ section div a {
   padding: 6px;
 }
 
-/* .center-text {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  padding-top: 5px;
-  padding-bottom: 0%;
-}
-.product-card div {
-  width: 100px;
-  float: left;
-}
-.product-card img {
-  width: 80%;
-  margin: 20px;
-}
-.product-card h4 {
-  margin: 20px;
-}
+@media screen and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }}
+@media screen and (max-width: 500px) {
+  .left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }}
+  @media screen and (max-width: 500px) {
+    .img {
+      width: 80%;  
+    }}
+  @media screen and (max-width: 500px) {
+    .icons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+      padding-bottom: 5px;
+      padding-top: 20px;
+    }}
 
-.heart {
-  display: block;
-  position: relative;
-  bottom: 480px;
-  left: 20px;
-  cursor: pointer;
-  background-color: transparent;
-  border-color: transparent;
-}
-.image {
-  max-width: 40%;
-} */
+  
+
+@media screen and (max-width: 500px) {
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }}
+  
 
 /*Footer*/
 
