@@ -339,38 +339,26 @@ section div a {
     display: flex;
     flex-direction: column;
   }
-}
-@media screen and (max-width: 500px) {
   .left {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-@media screen and (max-width: 500px) {
   .img {
     width: 80%;
   }
-}
-@media screen and (max-width: 500px) {
   .icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
   }
-}
-@media screen and (max-width: 500px) {
   .right {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     justify-items: center;
-    /* gap: 5px; */
     margin-left: 10vw;
     margin-right: 10vw;
     padding-top: 20px;
   }
-}
-@media screen and (max-width: 500px) {
   .fl {
     display: flex;
     flex-direction: column;
@@ -379,16 +367,12 @@ section div a {
     margin-left: 10vw;
     margin-right: 10vw;
   }
-}
-@media screen and (max-width: 500px) {
   .apply {
     display: flex;
     flex-direction: column;
     justify-items: center;
     width: 70px;
   }
-}
-@media screen and (max-width: 500px) {
   .sl, .sr {
     display: flex;
     flex-direction: column;
@@ -396,10 +380,7 @@ section div a {
     gap: 5px;
     margin-left: 10vw;
     margin-right: 10vw;
-    /* font-size: 14px; */
   }  
-}
-@media screen and (max-width: 500px) {
   .tl, .tr {
     display: flex;
     flex-direction: column;
@@ -408,8 +389,6 @@ section div a {
     margin-left: 10vw;
     margin-right: 10vw;
   }
-}
-@media screen and (max-width: 500px) {
   .fol, .for {
     display: flex;
     flex-direction: column;
@@ -418,13 +397,9 @@ section div a {
     margin-left: 10vw;
     margin-right: 10vw;
   }
-}
-@media screen and (max-width: 500px) {
   .button-checkout {
     margin-right: 25vw;
   }
-}
-@media screen and (max-width: 500px) {
   .products-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -434,6 +409,7 @@ section div a {
     gap: 50px;
   }
 }
+
 @media screen and (max-width: 390px) {
   .products-container {
     display: flex;
