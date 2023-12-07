@@ -26,6 +26,7 @@ header {
   background-color: transparent;
   top: 0;
   width: 100%;
+  z-index: 6;
 }
 
 .sticky /* this is for fixed header, we will do it in js later*/ {
@@ -106,13 +107,14 @@ h1 {
   font-family: "Nanum Myeongjo", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 50px;
+  font-size: 2.8rem;
   text-align: center;
-  padding-top: 10vw;
+  padding-top: 70px;
+  padding-bottom: 130px;
 }
 
 .Categories {
-  padding-top: 10vw;
+  padding-top: 0vw;
   margin: 0;
   box-sizing: border-box;
   text-align: center;
@@ -183,6 +185,65 @@ h1 {
 
 /*Product cards*/
 
+.product-card {
+  position: relative;
+  text-decoration: none;
+}
+
+.product_name,
+.price {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.product_name {
+  font-weight: 600;
+}
+
+.product-img {
+  width: 100%;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4vw 8vw;
+  padding-right: 10vw;
+  padding-left: 10vw;
+  padding-bottom: 90px;
+  margin-top: 200px;
+  margin-bottom: 180px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+section div a {
+  text-decoration: none;
+}
+
+.heart {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.heart-icon {
+  max-width: 60%;
+  padding: 6px;
+}
+
+.heart-icon-fill {
+  fill: #ffffff;
+  max-width: 60%;
+  padding: 6px;
+}
+
 .productsA {
   text-align: justify;
   color: var(--dark);
@@ -196,7 +257,7 @@ h1 {
 
 .product_name,
 .price {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: justify;
   color: var(--dark);
   text-decoration: none;
