@@ -265,11 +265,14 @@ select {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #dcc3ab;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 15px;
+  border-radius: 50px 50px 50px 50px;
+  border-color: #dcc3ab;
+  border-style: solid;
 }
 
 .circles-container {
@@ -280,7 +283,7 @@ select {
   text-align: center;
   font-size: 15px;
   font-weight: regular;
-  color: black;
+  color: var(--dark);
 }
 
 /*Footer*/
