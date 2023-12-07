@@ -148,7 +148,7 @@ h2 {
   backdrop-filter: blur(10px);
 }
 
-main {
+.left {
   display: flex;
   flex-direction: row;
   float: left;
@@ -189,7 +189,7 @@ select {
   padding-top: 100px;
 }
 
-aside {
+.right {
   width: 25%;
   padding-right: 10vw;
   padding-bottom: 10em;
@@ -346,6 +346,7 @@ section div a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media screen and (max-width: 500px) {
   .img {
     width: 80%;
@@ -369,6 +370,17 @@ section div a {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 5px;
     margin-left: 10vw;
     margin-right: 10vw;
   }
