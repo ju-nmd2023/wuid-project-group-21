@@ -303,6 +303,16 @@ select:focus {
   height: 20px;
 }
 
+.payment-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.payment-icons img {
+  height: 60%;
+}
+
 /*For JS part*/
 
 .input-container-hidden {
@@ -367,7 +377,7 @@ select:focus {
 
 aside {
   position: sticky;
-  top: 0;
+  top: 76px;
   grid-column-start: 4;
   grid-column-end: 6;
   display: flex;

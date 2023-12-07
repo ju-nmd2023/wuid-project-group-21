@@ -172,6 +172,14 @@ h1 {
   text-align: left;
 }
 
+.Categories ul li:hover .Category-menu ul li a {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px double var(--white);
+  border-radius: 0;
+  text-align: left;
+}
+
 .Categories ul li:hover .Category-menu ul li:last-child {
   border-bottom: none;
 }
