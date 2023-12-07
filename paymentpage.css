@@ -285,7 +285,7 @@ select:focus {
 .checkbox-container {
   display: flex;
   flex-direction: row;
-  align-items: self-start;
+  align-items: flex-start;
   gap: 10px;
 }
 
@@ -399,6 +399,10 @@ aside {
   align-items: center;
 }
 
+.product-checkout-column {
+  display: none;
+}
+
 .price-name-check {
   display: flex;
   gap: 14px;
@@ -438,9 +442,148 @@ aside {
   main {
     display: block;
   }
+
   form {
     max-width: none;
     margin-bottom: 100px;
+  }
+
+  .product-checkout-column {
+    display: flex;
+  }
+
+  aside {
+    display: none;
+  }
+
+  main form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+  }
+
+  button {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 2rem;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  label {
+    font-size: 1.1rem;
+  }
+
+  .checkbox-container label {
+    font-size: 1rem;
+  }
+
+  .checkbox-container label a {
+    font-size: 1rem;
+  }
+
+  .log-in {
+    padding-top: 6px;
+  }
+
+  .log-in a {
+    font-size: 1rem;
+  }
+
+  .log-in p {
+    font-size: 1rem;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+  form {
+    min-width: 150px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .input-container {
+    gap: 8px;
+  }
+
+  .input-basic {
+    font-size: 14px;
+  }
+
+  .first-last-names {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .payment-icons {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    gap: 10px;
+  }
+
+  .payment-icons img {
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 2rem;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .product_name {
+    font-size: 1rem;
+  }
+
+  form {
+    min-width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .price-name-check {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+
+  .form-submit {
+    padding: 18px 40px 16px 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
   }
 }
 
