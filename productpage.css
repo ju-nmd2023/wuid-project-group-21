@@ -139,11 +139,11 @@ h1 {
   color: var(--dark);
 }
 
-.active,
+/*.active,
 .Categories ul li :hover {
   text-decoration: underline;
   text-decoration-color: var(--dark);
-}
+}*/
 
 .Categories .icon {
   margin-left: 5px;
