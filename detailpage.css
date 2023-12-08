@@ -598,10 +598,10 @@ footer p {
 
 @media screen and (max-width: 1000px) {
   .detailmainpicture img {
-    width: 350px;
-  }
+    width: 300px;
+    }
   .detailmainpicture {
-    width: 350px;
+    width: 300px;
   }
   .detailchoosepicture img {
     width: 60px;
@@ -609,9 +609,9 @@ footer p {
   }
 
   .addto {
-    margin-left: 50px;
+    display: none;
   }
-  
+
   .products-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
