@@ -112,7 +112,7 @@ body {
   margin: 30px 5%;
   padding: 0;
   display: flex;
-  margin-left: 15%;
+  justify-content: center;
 }
 .main-container-left {
   height: auto;
