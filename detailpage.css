@@ -109,35 +109,29 @@ body {
 
 /* detailpage */
 .main-container {
-  align-items: center;
-  height: 800px;
   margin: 30px 5%;
   padding: 0;
-  margin-top: 4%;
+  display: flex;
   margin-left: 15%;
 }
 .main-container-left {
-  width: 50%;
-  height: 800px;
-  float: left;
+  height: auto;
 }
 .main-container-right {
-  width: 50%;
-  height: 800px;
-  float: right;
+  height: auto;
 }
-
+  
 .detailmainpicture {
   margin-right: 50px;
   width: 500px;
   height: 600px;
-}
-
+  }
+      
 .detailmainpicture img {
   width: 500px;
   height: auto;
-}
-
+  }
+  
 .detailinformation {
   font-size: x-large;
   font-weight: bold;
@@ -150,23 +144,26 @@ body {
 .detailchoosepicture img {
   width: 90px;
   height: auto;
-  justify-content: space-between;
+  justify-content: space-between; 
   margin: 20px;
 }
 
 .addto {
   font-size: medium;
-  float: right;
-  margin-right: 200px;
+  margin-left: 200px;
+}
+.Header_icons{
+  height: 18px;
 }
 
 button {
-  background-color: #d06809;
-  color: white;
-  padding: 10px 20px;
+  background-color: #d06809; 
+  color: white; 
+  padding: 10px 20px; 
   border: none;
-  border-radius: 5px;
+  border-radius: 5px; 
   margin-left: 20px;
+  width: 250px;
 }
 
 select {
@@ -193,7 +190,7 @@ select {
 .colors-container {
   height: 60px;
   margin-left: -10px;
-}
+}  
 
 .colors-container img {
   width: 40px;
@@ -237,15 +234,15 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
+  height: 80px; 
   margin: 0;
 }
 
 .recommendations {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; 
+  flex-wrap: wrap; 
   text-align: center;
-  width: 100%;
+  width: 95%;
   height: auto;
   margin: 20px 50px;
 }
@@ -515,52 +512,6 @@ footer p {
     margin-left: 10%;
     margin-right: 0.5%;
   }
-  .main-container-left {
-    width: 50%;
-    height: 800px;
-    float: left;
-  }
-  .main-container-right {
-    width: 50%;
-    height: 800px;
-    float: right;
-  }
-
-  .detailmainpicture {
-    margin-right: 50px;
-    width: 500px;
-    height: 600px;
-  }
-
-  .detailmainpicture img {
-    width: 500px;
-    height: auto;
-  }
-
-  .detailinformation {
-    font-size: x-large;
-    font-weight: bold;
-  }
-
-  .detailchoosepicture {
-    margin-top: 10px;
-    margin-left: -15px;
-  }
-  .detailchoosepicture img {
-    width: 90px;
-    height: auto;
-    justify-content: space-between;
-    margin: 20px;
-  }
-
-  .addto {
-    font-size: medium;
-    float: right;
-    margin-right: 200px;
-  }
-  .Heart_icons {
-    height: 18px;
-  }
 
   button {
     background-color: #d06809;
@@ -569,6 +520,35 @@ footer p {
     border: none;
     border-radius: 5px;
     margin-left: 20px;
+  }
+  .main-container {
+    display: grid;
+  }
+  .main-container-left {
+    width: 95%;
+    margin: auto;
+    display: grid;
+  }
+  .detailmainpicture {
+    margin: auto;
+    height: auto;
+  }
+  .main-container-right {
+    width: auto;
+    margin: auto;
+    display: grid;
+    margin-top: 50px;
+  }
+  .detailchoosepicture {
+    margin: auto;
+  }
+  button {
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 150px;
+  }
+  .descriptionabout-container {
+    width: 45%;
   }
 
   .Footer_logo {
