@@ -398,37 +398,7 @@ main section div {
   /*----------------------------------*/
 }
 
-@media screen and (max-width: 500px) {
-  .thanks {
-  text-align: center;
-  font-weight: 800;
-  font-size: 20px;
-  padding-bottom: 16px;
-  }
-  .messages {
-    columns: 2;
-    text-align: center;
-  }
-.order {
-  text-align: center;
-}
-.line {
-  display: block;
-}
-.details .details2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.button-continue-shopping {
-  /* position: relative; */
-  /* display: flex; */
-  /* padding: 20px 60px 18px 60px; */
-  justify-content: center;
-  justify-self: center;
-  width: fit-content;
-  margin-left: 70px;
-}
-}
+
 
 /*Footer*/
 
