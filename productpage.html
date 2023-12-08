@@ -1,133 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bibiee</title>
     <link rel="stylesheet" href="productpage.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Overpass:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="menu-logo-container">
-        <svg class="close-icon-hidden" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-          <path d="M2 2L15 15M2 15L15 2" stroke="#231F20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="menu-logo-container">
+          <svg
+            class="close-icon-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+          >
+            <path
+              d="M2 2L15 15M2 15L15 2"
+              stroke="#231F20"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
-        <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="21" viewBox="0 0 28 21" fill="none">
-          <path d="M2 19.1429H15.7143M2 10.5714H26M2 2H15.7143" stroke="#231F20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg
+            class="menu-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="21"
+            viewBox="0 0 28 21"
+            fill="none"
+          >
+            <path
+              d="M2 19.1429H15.7143M2 10.5714H26M2 2H15.7143"
+              stroke="#231F20"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
-          <a href="index.html"><img
-            class="Header_logo"
-            src="icons/Bibiee logo.svg"
-            alt="Bibiee logo"/></a>
-      </div>
-      <div id="language-selector">
-        <p class="language-selector-font">En</p>
-        <p>/</p>
-        <p>Hu</p>
-      </div>
-      <ul>
-        <li><a href="productpage.html">Products</a></li>
-        <li><a href="#">Events</a></li>
-        <li>
           <a href="index.html"
             ><img
               class="Header_logo"
               src="icons/Bibiee logo.svg"
               alt="Bibiee logo"
-            />
-          </a>
-        </li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="Header-icons-container">
-        <a href="#"
-          ><img
-            class="Header_icons"
-            src="icons/account icon.svg"
-            alt="Account icon"
-        /></a>
-        <a href="#"
-          ><img
-            class="Header_icons"
-            src="icons/heart icon.svg"
-            alt="Heart icon"
-        /></a>
-        <a href="shoppingcart.html"
-          ><img
-            class="Header_icons"
-            src="icons/cart icon.svg"
-            alt="Cart icon"
-        /></a>
-      </div>
-    </nav>
-    <section class="pop-up-menu-hidden">
-      <ul>
-        <a href="productpage.html" class="header-menu">Products</a>
-        <a href="#" class="header-menu">Events</a>
-        <a href="#" class="header-menu">About us</a>
-        <a href="#" class="header-menu">Contact</a>
-      </ul>
-      <div id="language-selector-inmenu">
-        <p class="language-selector-font">En</p>
-        <p>/</p>
-        <p>Hu</p>
-      </div>
-    </section>
-  </header>
-    <main>
-        <h1>Our products</h1>
-      <div class="Categories">
+          /></a>
+        </div>
+        <div id="language-selector">
+          <p class="language-selector-font">En</p>
+          <p>/</p>
+          <p>Hu</p>
+        </div>
         <ul>
-          <li class="active"><a href="#">All</a></li>
-          <li><a href="#">Popular now</a></li>
-          <li><a href="#">Summer</a><img class="icon" src="icons/menu_down.svg" alt="icon"></i>
-            <div class="Category-menu">
-                <ul>
-                <li><a href="#">All</a></li>
-                <li><a href="#">Swimwear</a></li>
-                <li><a href="#">Shawls</a></li>
-                <li><a href="#">Foot accessories</a></li>
-                </ul>
-            </div>
+          <li><a href="productpage.html">Products</a></li>
+          <li><a href="#">Events</a></li>
+          <li>
+            <a href="index.html"
+              ><img
+                class="Header_logo"
+                src="icons/Bibiee logo.svg"
+                alt="Bibiee logo"
+              />
+            </a>
           </li>
-          <li><a href="#">Winter</a><img class="icon" src="icons/menu_down.svg" alt="icon">
-            <div class="Category-menu">
-              <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="Header-icons-container">
+          <a href="#"
+            ><img
+              class="Header_icons"
+              src="icons/account icon.svg"
+              alt="Account icon"
+          /></a>
+          <a href="#"
+            ><img
+              class="Header_icons"
+              src="icons/heart icon.svg"
+              alt="Heart icon"
+          /></a>
+          <a href="shoppingcart.html"
+            ><img
+              class="Header_icons"
+              src="icons/cart icon.svg"
+              alt="Cart icon"
+          /></a>
+        </div>
+      </nav>
+      <section class="pop-up-menu-hidden">
+        <ul>
+          <a href="productpage.html" class="header-menu">Products</a>
+          <a href="#" class="header-menu">Events</a>
+          <a href="#" class="header-menu">About us</a>
+          <a href="#" class="header-menu">Contact</a>
+        </ul>
+        <div id="language-selector-inmenu">
+          <p class="language-selector-font">En</p>
+          <p>/</p>
+          <p>Hu</p>
+        </div>
+      </section>
+    </header>
+    <main>
+      <h1>Our products</h1>
+      <ul class="Categories">
+        <li class="active"><a class="filter-selectors" href="#">All</a></li>
+        <li class="active">
+          <a class="filter-selectors" href="#">Popular now</a>
+        </li>
+        <li>
+          <a class="filter-selectors" href="#">Summer</a
+          ><img class="icon" src="icons/menu_down.svg" alt="icon" />
+          <div class="Category-menu">
+            <ul>
+              <li><a href="#">All</a></li>
+              <li><a href="#">Swimwear</a></li>
+              <li><a href="#">Shawls</a></li>
+              <li><a href="#">Foot accessories</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a class="filter-selectors" href="#">Winter</a
+          ><img class="icon" src="icons/menu_down.svg" alt="icon" />
+          <div class="Category-menu">
+            <ul>
               <li><a href="#">All</a></li>
               <li><a href="#">Beanies</a></li>
               <li><a href="#">Scarfs</a></li>
               <li><a href="#">Gloves</a></li>
               <li><a href="#">Sweaters</a></li>
-              </ul>
+            </ul>
           </div>
-          </li>
-          <li><a href="#">Other</a><img class="icon" src="icons/menu_down.svg" alt="icon">
-            <div class="Category-menu">
-              <ul>
+        </li>
+        <li>
+          <a class="filter-selectors" href="#">Other</a
+          ><img class="icon" src="icons/menu_down.svg" alt="icon" />
+          <div class="Category-menu">
+            <ul>
               <li><a href="#">All</a></li>
               <li><a href="#">Home decor</a></li>
               <li><a href="#">Toys</a></li>
-              </ul>
+            </ul>
           </div>
-          </li>
-          <li><a href="#">Color</a><img class="icon" src="icons/menu_down.svg" alt="icon">
-            <div class="Category-menu">
-              <ul>
+        </li>
+        <li>
+          <a class="filter-selectors" href="#">Color</a
+          ><img class="icon" src="icons/menu_down.svg" alt="icon" />
+          <div class="Category-menu">
+            <ul>
               <li><a href="#">All</a></li>
               <li><a href="#">White</a></li>
               <li><a href="#">Beige</a></li>
@@ -140,12 +186,14 @@
               <li><a href="#">Purple</a></li>
               <li><a href="#">Grey</a></li>
               <li><a href="#">Black</a></li>
-              </ul>
+            </ul>
           </div>
-          </li>
-          <li><a href="#">Size</a><img class="icon" src="icons/menu_down.svg" alt="icon">
-            <div class="Category-menu">
-              <ul>
+        </li>
+        <li>
+          <a class="filter-selectors" href="#">Size</a
+          ><img class="icon" src="icons/menu_down.svg" alt="icon" />
+          <div class="Category-menu">
+            <ul>
               <li><a href="#">All</a></li>
               <li><a href="#">Baby</a></li>
               <li><a href="#">Kid</a></li>
@@ -154,259 +202,482 @@
               <li><a href="#">M</a></li>
               <li><a href="#">L</a></li>
               <li><a href="#">Onesize</a></li>
-              </ul>
+            </ul>
           </div>
-          </li>
-        </ul>
-      </div>
+        </li>
+      </ul>
 
-        <section class="products-container">
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+      <section class="products-container">
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
-          <a href="#" >
+          <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/kid beanie blue.png"
                 alt="Pompom beanie blue"
               />
               <figcaption class="product_name">Basic beanie</figcaption>
               <figcaption class="price">300 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
-          <a href="#" >
+          <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/basic beanie red.png"
                 alt="Basic beanie red"
               />
               <figcaption class="product_name">Basic beanie</figcaption>
               <figcaption class="price">300 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
           <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/basic beanie dark grey man.png"
                 alt="Basic beanie black"
               />
               <figcaption class="product_name">Basic beanie</figcaption>
               <figcaption class="price">300 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
           <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/sweather beige.png"
                 alt="Sweater"
               />
               <figcaption class="product_name">Sweater</figcaption>
               <figcaption class="price">500 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
           <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/hoodie white.png"
                 alt="Hoodie"
               />
               <figcaption class="product_name">Hoodie</figcaption>
               <figcaption class="price">400 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
-          <a href="detailedproductpage.html" >
+          <a href="detailedproductpage.html">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/basic beanie bright red medium pic.png"
                 alt="Basic beanie red"
               />
               <figcaption class="product_name">Basic beanie</figcaption>
               <figcaption class="price">300 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
-          <a href="#" >
+          <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/basic beanie dog grey.png"
                 alt="Basic beanie grey"
               />
               <figcaption class="product_name">Basic beanie</figcaption>
               <figcaption class="price">300 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
           <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/basic beanie pink.png"
                 alt="Basic beanie pink"
               />
               <figcaption class="product_name">Basic beanie</figcaption>
               <figcaption class="price">300 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
-          <a href="#" >
+          <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/stuffed toy.png"
                 alt="Toy"
               />
               <figcaption class="product_name">Knitted toy</figcaption>
               <figcaption class="price">300 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
           <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/pompom beanie mustard.png"
                 alt="Pompom beanie mustard"
               />
               <figcaption class="product_name">Pompom beanie</figcaption>
               <figcaption class="price">500 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
-          <a href="#" >
+          <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/basic beanie grey men.png"
                 alt="Basic beanie grey"
               />
               <figcaption class="product_name">Basic beanie</figcaption>
               <figcaption class="price">400 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
-          <a href="#" >
+          <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/sweather white.png"
                 alt="Sweater white"
               />
               <figcaption class="product_name">Sweater</figcaption>
               <figcaption class="price">300 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
-          <a href="#" >
+          <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/basic beanie mustard man.png"
                 alt="Basic beanie mustard"
               />
               <figcaption class="product_name">Basic beanie</figcaption>
               <figcaption class="price">500 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
           <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/scarf black big.png"
                 alt="Scarf big black"
               />
               <figcaption class="product_name">Scarf</figcaption>
               <figcaption class="price">400 SEK</figcaption>
             </figure>
-          </a></div>
-          <div class="product-card"> <button class="heart" type="button">
-            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="44" height="40" viewBox="0 0 44 40" fill="none">
-              <path d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </a>
+        </div>
+        <div class="product-card">
+          <button class="heart" type="button">
+            <svg
+              class="heart-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="40"
+              viewBox="0 0 44 40"
+              fill="none"
+            >
+              <path
+                d="M38.6765 21.2831L22.0185 37.7812L5.36047 21.2831C4.26172 20.2139 3.39625 18.9288 2.81856 17.5087C2.24087 16.0886 1.96348 14.5643 2.00385 13.0317C2.04422 11.4991 2.40148 9.99148 3.05313 8.60376C3.70478 7.21604 4.6367 5.97827 5.79022 4.96841C6.94374 3.95854 8.29385 3.19846 9.75555 2.73601C11.2173 2.27357 12.7589 2.11878 14.2833 2.2814C15.8078 2.44402 17.2821 2.92053 18.6133 3.68091C19.9446 4.44129 21.104 5.46908 22.0185 6.69955C22.937 5.47802 24.0977 4.45921 25.4281 3.70689C26.7584 2.95458 28.2297 2.48496 29.7499 2.32742C31.2701 2.16988 32.8064 2.32782 34.2628 2.79134C35.7191 3.25486 37.0641 4.014 38.2136 5.02123C39.363 6.02847 40.2922 7.26212 40.943 8.64497C41.5937 10.0278 41.952 11.5301 41.9955 13.0578C42.039 14.5855 41.7666 16.1058 41.1955 17.5234C40.6244 18.941 39.7669 20.2255 38.6765 21.2964"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
           <a href="#">
             <figure>
               <img
-              class="product-img"
+                class="product-img"
                 src="pictures/couple gloves.png"
                 alt="Glove for couples"
               />
               <figcaption class="product_name">Glove for couples</figcaption>
               <figcaption class="price">300 SEK</figcaption>
             </figure>
-          </a></div>
-        </section>
-       
+          </a>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <nav>
-        <a  class="Footer_logo" href="index.html">
+        <a class="Footer_logo" href="index.html">
           <img
             class="Footer_logo"
             src="icons/bibiee logo white.svg"
@@ -432,7 +703,7 @@
           </ul>
           <ul class="footer-links-two">
             <a class="footer-text" href="#">
-              <li >bibieeknitting@gmail.com</li>
+              <li>bibieeknitting@gmail.com</li>
             </a>
             <a class="footer-text" href="#">
               <li>+36303696450</li>
@@ -440,32 +711,23 @@
           </ul>
         </section>
         <ul class="Footer_icons-container">
-          <a class="Footer-icons"
-           href="https://www.instagram.com/bibieeknitting/">
-            <img
-              src="icons/instagram icon.svg"
-              alt="Instagram icon"
-            />
+          <a
+            class="Footer-icons"
+            href="https://www.instagram.com/bibieeknitting/"
+          >
+            <img src="icons/instagram icon.svg" alt="Instagram icon" />
           </a>
-          <a class="Footer-icons"
-          href="#">
-            <img
-              src="icons/email icon.svg"
-              alt="Email icon"
-            />
+          <a class="Footer-icons" href="#">
+            <img src="icons/email icon.svg" alt="Email icon" />
           </a>
-          <a class="Footer-icons"
-          href="https://www.facebook.com/vivie.bibiee">
-            <img
-              src="icons/facebook icon.svg"
-              alt="Facebook icon"
-            />
+          <a class="Footer-icons" href="https://www.facebook.com/vivie.bibiee">
+            <img src="icons/facebook icon.svg" alt="Facebook icon" />
           </a>
         </ul>
       </nav>
-      <p> @ Bibiee 2023</p>
+      <p>@ Bibiee 2023</p>
     </footer>
     <script src="js/header.js"></script>
-        <script src="js/heartanimation.js"></script>
-</body>
+    <script src="js/heartanimation.js"></script>
+  </body>
 </html>

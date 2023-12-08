@@ -119,32 +119,33 @@ h1 {
   font-size: 2.8rem;
   text-align: center;
   padding-top: 70px;
-  padding-bottom: 130px;
+  padding-bottom: 100px;
 }
 
 .Categories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
   padding-top: 0vw;
-  margin: 0;
-  box-sizing: border-box;
-  text-align: center;
-  position: relative;
-}
-
-.Categories ul {
-  display: inline-flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
   list-style: none;
   color: var(--dark);
 }
 
-.Categories ul li {
-  width: 120px;
-  margin: 15px;
+.Categories li {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
   padding: 15px;
 }
 
-.Categories ul li a {
+.Categories li a {
   text-decoration: none;
   color: var(--dark);
+  text-wrap: nowrap;
 }
 
 .Categories .icon {
@@ -156,20 +157,26 @@ h1 {
   display: none;
 }
 
-.Categories ul li:hover .Category-menu {
+.Categories li:hover .Category-menu {
   display: block;
   position: absolute;
   background-color: var(--beige);
-  margin-top: 15px;
+  margin-top: 35px;
   margin-left: -15px;
 }
 
-.Categories ul li:hover .Category-menu ul {
+.Categories li:hover .Category-menu ul {
   display: block;
   margin: 10px;
 }
 
-.Categories ul li:hover .Category-menu ul li {
+.Categories li:hover .Category-menu ul li {
+  padding: 7px;
+  border-radius: 0;
+  text-align: left;
+}
+
+.Categories li:hover .Category-menu ul li a {
   width: 150px;
   padding: 10px;
   border-bottom: 1px double var(--white);
@@ -177,22 +184,22 @@ h1 {
   text-align: left;
 }
 
-.Categories ul li:hover .Category-menu ul li a {
-  width: 150px;
-  padding: 10px;
-  border-bottom: 1px double var(--white);
-  border-radius: 0;
-  text-align: left;
-}
-
-.Categories ul li:hover .Category-menu ul li:last-child {
+.Categories li:hover .Category-menu ul li:last-child {
   border-bottom: none;
   text-decoration: none;
 }
 
-.Categories ul li:hover .Category-menu ul li a:hover {
+.Categories li:hover .Category-menu ul li a:hover {
   color: var(--white);
   text-decoration: none;
+}
+
+.filter-selectors {
+  font-size: 1.2rem;
+}
+
+.active:hover {
+  text-decoration: underline;
 }
 
 /*Product cards*/
@@ -225,7 +232,7 @@ h1 {
   padding-right: 10vw;
   padding-left: 10vw;
   padding-bottom: 90px;
-  margin-top: 200px;
+  margin-top: 80px;
   margin-bottom: 180px;
 }
 
