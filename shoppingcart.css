@@ -275,7 +275,7 @@ select {
   padding: 10px 20px;
 }
 
-.fr :hover{
+.fr :hover {
   cursor: pointer;
 }
 
@@ -287,19 +287,15 @@ select {
   border: none;
 }
 
-.button-checkout{
+.button-checkout {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .button-checkout :hover {
-  
   cursor: pointer;
 }
-
-
-
 
 /*product card*/
 .product-card {
@@ -355,6 +351,73 @@ section div a {
   fill: #ffffff;
   max-width: 60%;
   padding: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4vw 8vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .smaller {
+    font-size: 2rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .smaller {
+    font-size: 1.8rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .product_name,
+  .price {
+    font-size: 1rem;
+  }
+
+  .products-container {
+    gap: 8vw 8vw;
+    margin-top: 0;
+    margin-bottom: 100px;
+    padding-bottom: 40px;
+  }
+
+  .heart {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .heart-icon {
+    width: 22px;
+    height: 20px;
+    padding-bottom: 0px;
+  }
+
+  .heart-icon-fill {
+    fill: #ffffff;
+    width: 22px;
+    height: 20px;
+    padding-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -427,12 +490,9 @@ section div a {
     margin-right: 25vw;
   }
   .products-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    gap: 30px 24px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -440,12 +500,6 @@ section div a {
   .products-container {
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    margin-left: 10vw;
-    margin-right: 10vw;
   }
 }
 
