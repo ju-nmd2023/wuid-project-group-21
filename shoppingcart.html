@@ -133,33 +133,30 @@
     <main>
       <div class="container">
         <section class="left">
-          <div class="img">
-            <img
-              src="pictures/basic beanie bright red medium pic.png"
-              alt="basic"
-              width="100%"
-            />
+          <div class="basket-image">
+            <img src="pictures/basket-image.png" alt="basic" width="100%" />
           </div>
-          <div class="description">
-            <h3>Basic beanie</h3>
-            <h5>Size: S</h5>
-            <h5>Color: Red</h5>
-
-            <select name="qualitynumber">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
-          <div class="icons">
-            <button class="can"><i class="fa-solid fa-trash-can"></i></button>
-            <h2>300 SEK</h2>
+          <div class="all-description">
+            <div class="description-one">
+              <h3>Basic beanie</h3>
+              <h5>Size: S</h5>
+              <h5>Color: Red</h5>
+              <select name="qualitynumber">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="description-two">
+              <button class="can"><i class="fa-solid fa-trash-can"></i></button>
+              <h2>300 SEK</h2>
+            </div>
           </div>
         </section>
 
-        <section class="right">
+        <aside>
           <div class="first">
             <div class="fl">
               <p>Discount code or gift card</p>
@@ -168,36 +165,19 @@
               <button class="apply">Apply</button>
             </div>
           </div>
-          <div class="second">
-            <div class="sl">
-              <p>Order Price:</p>
+          <div class="product-checkout"></div>
+          <div class="price-shipping-total">
+            <div>
+              <p>Order price: <span>300 SEK</span></p>
+              <p>Shipping: <span> 40 SEK </span></p>
             </div>
-            <div class="sr">
-              <p>300 SEK</p>
-            </div>
+            <img class="line" src="icons/Line-thick.svg" alt="line" />
+            <p class="total-price">
+              In total: <span class="total-price">340 SEK</span>
+            </p>
           </div>
-          <div class="third">
-            <div class="tl">
-              <p>Shipping:</p>
-            </div>
-            <div class="tr">
-              <p>40 SEK</p>
-            </div>
-          </div>
-          <div class="forth">
-            <div class="fol">
-              <p>In total:</p>
-            </div>
-            <div class="for">
-              <p>340 SEK</p>
-            </div>
-          </div>
-          <div>
-            <a class="button-checkout" href="paymentpage.html">
-              <button class="check">Go to checkout</button>
-            </a>
-          </div>
-        </section>
+          <a href="confirmationpage.html" class="form-submit">Go to checkout</a>
+        </aside>
       </div>
       <section class="may-like">
         <div class="center-text">
