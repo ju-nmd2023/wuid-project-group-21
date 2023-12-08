@@ -152,7 +152,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5vw;
-  margin-bottom: 180px;
+  margin-bottom: 100px;
   margin-left: 10vw;
   margin-right: 10vw;
 }
@@ -477,7 +477,7 @@ section div a {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
   h1 {
     font-size: 2.4rem;
   }
@@ -487,11 +487,30 @@ section div a {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .all-description {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .description-one {
+    align-items: center;
+    gap: 30px;
+  }
+  .description-two {
+    gap: 30px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 2rem;
+    padding-bottom: 80px;
   }
 
   .smaller {
@@ -533,6 +552,11 @@ section div a {
     width: 22px;
     height: 20px;
     padding-bottom: 0px;
+  }
+  .button-continue-shopping {
+    padding: 18px 40px 16px 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
   }
 }
 
