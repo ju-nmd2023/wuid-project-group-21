@@ -269,11 +269,16 @@ select {
 }
 
 .check {
-  padding: 1em 38%;
+  padding: 1em;
 }
 .apply {
   padding: 10px 20px;
 }
+
+.fr :hover{
+  cursor: pointer;
+}
+
 .apply,
 .check {
   color: white;
@@ -282,8 +287,14 @@ select {
   border: none;
 }
 
+.button-checkout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .button-checkout :hover {
-  color: var(--orange-hover);
+  
   cursor: pointer;
 }
 
