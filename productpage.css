@@ -186,6 +186,33 @@ header nav div a {
   }
 }
 
+@media screen and (max-width: 500px) {
+  /*HEADER*/
+
+  header nav {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .menu-logo-container {
+    gap: 8px;
+  }
+
+  .Header-icons-container {
+    gap: 10px;
+  }
+
+  .Header-icons-container a img {
+    height: 20px;
+  }
+
+  .pop-up-menu {
+    padding-left: 20px;
+  }
+
+  /*----------------------------------*/
+}
+
 /*MAIN*/
 
 body {
@@ -350,54 +377,70 @@ section div a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 900px) {
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-  /*HEADER*/
-
-  header nav {
-    margin-left: 20px;
-    margin-right: 20px;
+@media screen and (max-width: 600px) {
+  .product_name,
+  .price {
+    font-size: 1rem;
   }
 
-  .menu-logo-container {
-    gap: 8px;
+  .products-container {
+    gap: 8vw 8vw;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 40px;
   }
 
-  .Header-icons-container {
-    gap: 10px;
+  .heart {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
   }
 
-  .Header-icons-container a img {
+  .heart-icon {
+    width: 22px;
     height: 20px;
+    padding-bottom: 0px;
   }
 
-  .pop-up-menu {
-    padding-left: 20px;
+  .heart-icon-fill {
+    fill: #ffffff;
+    width: 22px;
+    height: 20px;
+    padding-bottom: 0px;
   }
+}
 
-  /*----------------------------------*/
-
-
-@media screen and (max-width: 520px){
-  .Categories, .Categories ul{
+@media screen and (max-width: 520px) {
+  .Categories,
+  .Categories ul {
     flex-direction: column;
     align-items: start;
   }
 
-  .Categories ul{
+  .Categories ul {
     margin-top: 0;
   }
 
-  .Categories li{
+  .Categories li {
     margin-left: 0;
     margin-bottom: 1rem;
   }
-}
 
-
-@media screen and (min-width: 520px){
   .products-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    gap: 30px 24px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   h1 {
     font-size: 2.8rem;
@@ -406,22 +449,12 @@ section div a {
   }
 }
 
-@media screen and (min-width: 750px){
+@media screen and (max-width: 330px) {
   .products-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
   }
- 
 }
-
-@media screen and (min-width: 1200px){
-  .products-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
- 
-}
-
-
 
 /*Footer*/
 
