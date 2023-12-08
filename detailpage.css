@@ -164,9 +164,6 @@ body {
   font-size: medium;
   margin-left: 200px;
 }
-.Header_icons {
-  height: 18px;
-}
 
 .add-to-cart {
   background-color: #d06809;
@@ -599,7 +596,7 @@ footer p {
 @media screen and (max-width: 1000px) {
   .detailmainpicture img {
     width: 300px;
-    }
+  }
   .detailmainpicture {
     width: 300px;
   }
