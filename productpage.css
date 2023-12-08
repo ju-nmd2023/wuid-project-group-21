@@ -20,6 +20,11 @@ html {
   --pink-hover: #e07b7d;
 }
 
+.remove-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 /*Header*/
 header {
   z-index: 2;
@@ -377,14 +382,41 @@ section div a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1000px) {
+  .Categories {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 25px;
+    padding-top: 0vw;
+    margin-left: 10vw;
+    margin-right: 0;
+    list-style: none;
+    color: var(--dark);
+
+    overflow-x: auto;
+  }
+
+  .Categories::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .products-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
   }
 }
 
 @media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
   .product_name,
   .price {
     font-size: 1rem;
@@ -392,7 +424,7 @@ section div a {
 
   .products-container {
     gap: 8vw 8vw;
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: 100px;
     padding-bottom: 40px;
   }
@@ -421,31 +453,24 @@ section div a {
   }
 }
 
-@media screen and (max-width: 520px) {
-  .Categories,
-  .Categories ul {
+@media screen and (max-width: 500px) {
+  .Categories {
     flex-direction: column;
     align-items: start;
   }
 
-  .Categories ul {
+  .Categories {
     margin-top: 0;
   }
 
   .Categories li {
     margin-left: 0;
-    margin-bottom: 1rem;
   }
 
   .products-container {
     gap: 30px 24px;
     padding-left: 20px;
     padding-right: 20px;
-  }
-  h1 {
-    font-size: 2.8rem;
-    padding-top: 70px;
-    padding-bottom: 70px;
   }
 }
 

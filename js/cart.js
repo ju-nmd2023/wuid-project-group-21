@@ -1,12 +1,17 @@
+//Some issues is here with horizontall scroll using mouse wheel//
 
-let heartButtons = document.querySelectorAll(".heart");
-let heartIcons = document.querySelectorAll(".heart-icon");
+/*const scrollingWheel = document.querySelector(".Categories");
 
-//I have read about "forEach" here https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example///
+//Information was partly taken from: https://www.youtube.com/watch?v=0uskTP_iHNI//
 
-heartButtons.forEach(function (heartButton, index) {
-  heartButton.addEventListener("click", function () {
-    heartIcons[index].classList.toggle("heart-icon");
-    heartIcons[index].classList.toggle("heart-icon-fill");
-  });
-});
+scrollingWheel.addEventListener(
+  "wheel",
+  function (e) {
+    if (e.wheelDelta > 0) {
+      this.scrollLeft -= 50;
+    } else {
+      this.scrollLeft += 50;
+    }
+  },
+  { passive: true }
+);*/
