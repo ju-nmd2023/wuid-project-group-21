@@ -177,7 +177,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  background: url("pictures/home-page-product-image.png");
+  background: url(pictures/home-page-product-image.png);
   background-position: center;
   min-height: 700px;
   height: 50vw;
