@@ -18,44 +18,75 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <body>
-    <header>
-      <nav>
-        <div id="language-selector">
-          <p class="language-selector-font">En</p>
-          <p>/</p>
-          <p>Hu</p>
-        </div>
-          <ul>
-            <li><a href="productpage.html" class="header menu">Products</a></li>
-            <li><a href="#" class="header menu">Events</a></li>
-            <li><a href="index.html"><img
+      <header>
+        <nav>
+          <div class="menu-logo-container">
+            <svg class="close-icon-hidden" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+              <path d="M2 2L15 15M2 15L15 2" stroke="#231F20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="21" viewBox="0 0 28 21" fill="none">
+              <path d="M2 19.1429H15.7143M2 10.5714H26M2 2H15.7143" stroke="#231F20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <a href="index.html"><img
                 class="Header_logo"
                 src="icons/Bibiee logo.svg"
-                alt="Bibiee logo"
-              />
-            </a></li>
-            <li><a href="#" class="header menu">About us</a></li>
-            <li><a href="#" class="header menu">Contact</a></li>
+                alt="Bibiee logo"/></a>
+          </div>
+          <div id="language-selector">
+            <p class="language-selector-font">En</p>
+            <p>/</p>
+            <p>Hu</p>
+          </div>
+          <ul>
+            <li><a href="productpage.html">Products</a></li>
+            <li><a href="#">Events</a></li>
+            <li>
+              <a href="index.html"
+                ><img
+                  class="Header_logo"
+                  src="icons/Bibiee logo.svg"
+                  alt="Bibiee logo"
+                />
+              </a>
+            </li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
           <div class="Header-icons-container">
-          <a href="#"><img
-              class="Header_icons"
-              src="icons/account icon.svg"
-              alt="Account icon"
+            <a href="#"
+              ><img
+                class="Header_icons"
+                src="icons/account icon.svg"
+                alt="Account icon"
             /></a>
-          <a href="#"><img
-              class="Header_icons"
-              src="icons/heart icon.svg"
-              alt="Heart icon"
+            <a href="#"
+              ><img
+                class="Header_icons"
+                src="icons/heart icon.svg"
+                alt="Heart icon"
             /></a>
-          <a href="shoppingcart.html"><img
-              class="Header_icons"
-              src="icons/cart icon.svg"
-              alt="Cart icon"
+            <a href="shoppingcart.html"
+              ><img
+                class="Header_icons"
+                src="icons/cart icon.svg"
+                alt="Cart icon"
             /></a>
           </div>
-      </nav>
-    </header>
+        </nav>
+        <section class="pop-up-menu-hidden">
+          <ul>
+            <a href="productpage.html" class="header-menu">Products</a>
+            <a href="#" class="header-menu">Events</a>
+            <a href="#" class="header-menu">About us</a>
+            <a href="#" class="header-menu">Contact</a>
+          </ul>
+          <div id="language-selector-inmenu">
+            <p class="language-selector-font">En</p>
+            <p>/</p>
+            <p>Hu</p>
+          </div>
+        </section>
+      </header>
     <main>
         <section class="section-first-home">
           <div class="made-with-love-container"> 
@@ -265,6 +296,6 @@
       <p> @ Bibiee 2023</p>
     </footer>
     <script src="js/header.js"></script>
-        <script src="js/heartanimation.js"></script>
+    <script src="js/heartanimation.js"></script>
   </body>
 </html>
