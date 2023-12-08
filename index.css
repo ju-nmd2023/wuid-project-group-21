@@ -177,7 +177,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  background: url("../pictures/home-page-product-image.png");
+  background: url("pictures/home-page-product-image.png");
   background-position: center;
   min-height: 700px;
   height: 50vw;
@@ -378,7 +378,7 @@ section div a {
   /*-----------------------------------------*/
 
   .section-first-home {
-    background: url(../pictures/home-page-image-tablet.png);
+    background: url(pictures/home-page-image-tablet.png);
     background-position: center;
   }
 
