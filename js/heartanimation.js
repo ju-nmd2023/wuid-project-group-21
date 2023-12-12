@@ -5,7 +5,6 @@ let heartIcons = document.querySelectorAll(".heart-icon");
 
 heartButtons.forEach(function (heartButton, index) {
   heartButton.addEventListener("click", function () {
-    heartIcons[index].classList.toggle("heart-icon");
     heartIcons[index].classList.toggle("heart-icon-fill");
   });
 });

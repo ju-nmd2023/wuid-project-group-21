@@ -252,8 +252,8 @@ aside {
   flex-direction: row;
   justify-content: space-between;
   align-content: space-between;
-  flex-grow: 1;
   align-items: center;
+  flex-grow: 1;
   gap: 40px;
   padding: 40px;
   margin-bottom: 180px;
@@ -263,7 +263,7 @@ aside {
 }
 
 .basket-image {
-  max-width: 330%;
+  max-width: 100%;
 }
 
 .description-one {
@@ -552,11 +552,6 @@ section div a {
     width: 22px;
     height: 20px;
     padding-bottom: 0px;
-  }
-  .button-continue-shopping {
-    padding: 18px 40px 16px 40px;
-    font-size: 1.1rem;
-    font-weight: 500;
   }
 }
 
