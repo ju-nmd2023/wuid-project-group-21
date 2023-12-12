@@ -107,9 +107,6 @@ body {
   background-image: url(icons/Backgroud\ icon.svg);
   padding-top: 76px;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 h1 {
@@ -185,22 +182,6 @@ aside {
   display: none;
 }
 
-.price-name-check {
-  display: flex;
-  gap: 14px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex: 1 0 0;
-}
-
-.price-name-check :first-child {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-}
-
 .line {
   width: 100%;
 }
@@ -210,17 +191,15 @@ aside {
   flex-direction: column;
   align-items: stretch;
   gap: 20px;
-  align-self: stretch;
 }
 
 .price-shipping-total p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  align-self: stretch;
 }
 
-.form-submit {
+.go-to-checkout {
   display: flex;
   padding: 20px 60px 18px 60px;
   justify-content: center;
@@ -251,7 +230,6 @@ aside {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: space-between;
   align-items: center;
   flex-grow: 1;
   gap: 40px;
@@ -288,7 +266,6 @@ aside {
 .all-description {
   display: flex;
   flex-direction: row;
-  align-content: stretch;
   flex-grow: 1;
   justify-content: space-between;
 }
@@ -303,16 +280,6 @@ select {
   border-radius: 5px;
   padding: 5px;
   width: 60px;
-}
-
-.descripition {
-  padding-top: 100px;
-}
-
-.right {
-  width: 25%;
-  padding-right: 10vw;
-  padding-bottom: 10em;
 }
 
 .fl {
@@ -356,18 +323,7 @@ select {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.second {
-  padding-top: 3em;
-}
-.third {
-  border-bottom: solid;
-  border-width: 1px;
-  padding-bottom: 10px;
-}
 
-.check {
-  padding: 1em;
-}
 .apply {
   font-size: 1rem;
   padding: 10px 20px;
@@ -377,15 +333,14 @@ select {
   cursor: pointer;
 }
 
-.apply,
-.check {
+.apply {
   color: white;
   background-color: #d06809;
   border-radius: 4px;
   border: none;
 }
 
-.form-submit :hover {
+.go-to-checkout :hover {
   cursor: pointer;
 }
 
@@ -451,21 +406,6 @@ section div a {
   .container {
     display: flex;
     flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .left {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-  }
-  .all-description {
-    flex-direction: column;
-    gap: 40px;
-  }
-  .description-two {
-    gap: 30px;
   }
 }
 
