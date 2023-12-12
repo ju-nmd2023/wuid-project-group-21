@@ -1,4 +1,4 @@
-let heartButtons = document.querySelectorAll("button");
+let heartButtons = document.querySelectorAll(".heart");
 let heartIcons = document.querySelectorAll(".heart-icon");
 
 //I have read about "forEach" here https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example///
